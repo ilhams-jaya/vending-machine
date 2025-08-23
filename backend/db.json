@@ -1,0 +1,386 @@
+{
+  "meta": {
+    "machineName": "Next Vendo 1.0",
+    "currency": "IDR",
+    "locale": "id-ID",
+    "acceptedDenominations": [
+      2000,
+      5000,
+      10000,
+      20000,
+      50000
+    ]
+  },
+  "products": [
+    {
+      "id": 1,
+      "code": "A1",
+      "name": "Aqua Mineral 600ml",
+      "type": "drink",
+      "price": 5000,
+      "stock": 11,
+      "image": "/images/aqua.jpeg",
+      "active": true,
+      "createdAt": "2025-08-01T09:00:00+07:00",
+      "updatedAt": "2025-08-21T09:00:00+07:00"
+    },
+    {
+      "id": 2,
+      "code": "A2",
+      "name": "Teh Pucuk Harum 350ml",
+      "type": "drink",
+      "price": 7000,
+      "stock": 7,
+      "image": "/images/teh.jpeg",
+      "active": true,
+      "createdAt": "2025-08-01T09:00:00+07:00",
+      "updatedAt": "2025-08-21T09:00:00+07:00"
+    },
+    {
+      "id": 3,
+      "code": "B1",
+      "name": "Wafer Nabati Cokelat",
+      "type": "snack",
+      "price": 6500,
+      "stock": 14,
+      "image": "/images/wafer.jpg",
+      "active": true,
+      "createdAt": "2025-08-01T09:00:00+07:00",
+      "updatedAt": "2025-08-21T09:00:00+07:00"
+    },
+    {
+      "id": 4,
+      "code": "B2",
+      "name": "Chitato Beef 48 gram",
+      "type": "snack",
+      "price": 10000,
+      "stock": 15,
+      "image": "/images/chitato.jpg",
+      "active": true,
+      "createdAt": "2025-08-01T09:00:00+07:00",
+      "updatedAt": "2025-08-21T09:00:00+07:00"
+    },
+    {
+      "id": 5,
+      "code": "C1",
+      "name": "Nescafe Latte 250ml",
+      "type": "drink",
+      "price": 12000,
+      "stock": 7,
+      "image": "/images/coffee.jpg",
+      "active": true,
+      "createdAt": "2025-08-01T09:00:00+07:00",
+      "updatedAt": "2025-08-21T09:00:00+07:00"
+    },
+    {
+      "id": 6,
+      "code": "B3",
+      "name": "Popcorn Caramel 40 gram",
+      "type": "snack",
+      "price": 12000,
+      "stock": 6,
+      "image": "/images/popcorn.jpg",
+      "active": true,
+      "createdAt": "2025-08-01T09:00:00+07:00",
+      "updatedAt": "2025-08-21T09:00:00+07:00"
+    }
+  ],
+  "denominations": [
+    {
+      "id": 2000,
+      "value": 2000,
+      "label": "Rp2.000",
+      "enabled": true
+    },
+    {
+      "id": 5000,
+      "value": 5000,
+      "label": "Rp5.000",
+      "enabled": true
+    },
+    {
+      "id": 10000,
+      "value": 10000,
+      "label": "Rp10.000",
+      "enabled": true
+    },
+    {
+      "id": 20000,
+      "value": 20000,
+      "label": "Rp20.000",
+      "enabled": true
+    },
+    {
+      "id": 50000,
+      "value": 50000,
+      "label": "Rp50.000",
+      "enabled": true
+    }
+  ],
+  "cashbox": [
+    {
+      "id": 1,
+      "value": 2000,
+      "count": 30
+    },
+    {
+      "id": 2,
+      "value": 5000,
+      "count": 25
+    },
+    {
+      "id": 3,
+      "value": 10000,
+      "count": 20
+    },
+    {
+      "id": 4,
+      "value": 20000,
+      "count": 15
+    },
+    {
+      "id": 5,
+      "value": 50000,
+      "count": 10
+    }
+  ],
+  "transactions": [
+    {
+      "id": 1,
+      "timestamp": "2025-08-18T14:20:00+07:00",
+      "items": [
+        {
+          "productId": 3,
+          "name": "Wafer Cokelat",
+          "qty": 1,
+          "price": 6500,
+          "subtotal": 6500
+        }
+      ],
+      "paid": 10000,
+      "change": 3500,
+      "paymentBreakdown": {
+        "5000": 2
+      },
+      "status": "SUCCESS",
+      "note": "Sample seed transaction"
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-08-20T10:05:00+07:00",
+      "items": [
+        {
+          "productId": 1,
+          "name": "Aqua 600ml",
+          "qty": 2,
+          "price": 5000,
+          "subtotal": 10000
+        }
+      ],
+      "paid": 20000,
+      "change": 10000,
+      "paymentBreakdown": {
+        "10000": 2
+      },
+      "status": "SUCCESS",
+      "note": "Sample seed transaction"
+    },
+    {
+      "timestamp": "2025-08-22T03:07:29.779Z",
+      "items": [
+        {
+          "productId": 5,
+          "name": "Kopi Kaleng",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 20000,
+      "change": 8000,
+      "status": "SUCCESS",
+      "id": 3
+    },
+    {
+      "timestamp": "2025-08-22T03:35:43.083Z",
+      "items": [
+        {
+          "productId": 1,
+          "name": "Aqua 600ml",
+          "qty": 1,
+          "price": 5000,
+          "subtotal": 5000
+        }
+      ],
+      "paid": 10000,
+      "change": 5000,
+      "status": "SUCCESS",
+      "id": 4
+    },
+    {
+      "timestamp": "2025-08-22T16:26:43.251Z",
+      "items": [
+        {
+          "productId": 5,
+          "name": "Kopi Kaleng",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 30000,
+      "change": 18000,
+      "status": "SUCCESS",
+      "id": 5
+    },
+    {
+      "timestamp": "2025-08-22T16:27:09.356Z",
+      "items": [
+        {
+          "productId": 5,
+          "name": "Kopi Kaleng",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 30000,
+      "change": 18000,
+      "status": "SUCCESS",
+      "id": 6
+    },
+    {
+      "timestamp": "2025-08-22T16:33:22.811Z",
+      "items": [
+        {
+          "productId": 3,
+          "name": "Wafer Cokelat",
+          "qty": 2,
+          "price": 6500,
+          "subtotal": 13000
+        }
+      ],
+      "paid": 15000,
+      "change": 2000,
+      "status": "SUCCESS",
+      "id": 7
+    },
+    {
+      "timestamp": "2025-08-23T15:49:52.411Z",
+      "items": [
+        {
+          "productId": 6,
+          "name": "Popcorn Caramel 40 gram",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        },
+        {
+          "productId": 5,
+          "name": "Nescafe Latte 250ml",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 50000,
+      "change": 26000,
+      "status": "SUCCESS",
+      "id": 8
+    },
+    {
+      "timestamp": "2025-08-23T15:54:48.277Z",
+      "items": [
+        {
+          "productId": 6,
+          "name": "Popcorn Caramel 40 gram",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        },
+        {
+          "productId": 5,
+          "name": "Nescafe Latte 250ml",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 50000,
+      "change": 26000,
+      "status": "SUCCESS",
+      "id": 9
+    },
+    {
+      "timestamp": "2025-08-23T15:56:21.233Z",
+      "items": [
+        {
+          "productId": 6,
+          "name": "Popcorn Caramel 40 gram",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        },
+        {
+          "productId": 5,
+          "name": "Nescafe Latte 250ml",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 50000,
+      "change": 26000,
+      "status": "SUCCESS",
+      "id": 10
+    },
+    {
+      "timestamp": "2025-08-23T15:56:53.551Z",
+      "items": [
+        {
+          "productId": 6,
+          "name": "Popcorn Caramel 40 gram",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        },
+        {
+          "productId": 5,
+          "name": "Nescafe Latte 250ml",
+          "qty": 1,
+          "price": 12000,
+          "subtotal": 12000
+        }
+      ],
+      "paid": 50000,
+      "change": 26000,
+      "status": "SUCCESS",
+      "id": 11
+    },
+    {
+      "timestamp": "2025-08-23T16:00:23.315Z",
+      "items": [
+        {
+          "productId": 2,
+          "name": "Teh Pucuk Harum 350ml",
+          "qty": 1,
+          "price": 7000,
+          "subtotal": 7000
+        }
+      ],
+      "paid": 10000,
+      "change": 3000,
+      "status": "SUCCESS",
+      "id": 12
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "email": "admin@example.com",
+      "password": "admin123",
+      "role": "admin",
+      "name": "Admin Demo"
+    }
+  ]
+}
