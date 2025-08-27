@@ -30,7 +30,7 @@
       "name": "Teh Pucuk Harum 350ml",
       "type": "drink",
       "price": 7000,
-      "stock": 7,
+      "stock": 6,
       "image": "/images/teh.jpeg",
       "active": true,
       "createdAt": "2025-08-01T09:00:00+07:00",
@@ -75,7 +75,7 @@
     {
       "id": 6,
       "code": "B3",
-      "name": "Popcorn Caramel 40 gram",
+      "name": "Popcorn Caramel",
       "type": "snack",
       "price": 12000,
       "stock": 6,
@@ -372,6 +372,22 @@
       "change": 3000,
       "status": "SUCCESS",
       "id": 12
+    },
+    {
+      "timestamp": "2025-08-27T07:11:15.208Z",
+      "items": [
+        {
+          "productId": 2,
+          "name": "Teh Pucuk Harum 350ml",
+          "qty": 1,
+          "price": 7000,
+          "subtotal": 7000
+        }
+      ],
+      "paid": 10000,
+      "change": 3000,
+      "status": "SUCCESS",
+      "id": 13
     }
   ],
   "users": [
